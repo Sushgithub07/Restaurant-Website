@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
 
+    <script>
+
+      function validateForm() {
+          var x = document.forms["myForm"]["name"].value;
+          var y=document.forms["myForm"]["email"].value;
+          var z=document.forms["myForm"]["mobile number"].value;
+          atpos = y.indexOf("@");
+          dotpos = y.lastIndexOf(".");
+          if (x == "") {
+            
+            alert("Name must be filled out");
+            return false;
+          }
+          if (atpos < 1 || ( dotpos - atpos < 2 )) {
+                    alert("Please enter correct Email ID");
+                   
+                    return false;
+                 }
+                 if(z.length!=10)  
+       {
+         alert(" Not Valid Mobile number");
+         return false;
+       }
+             }
+        </script>
+</head>
+<style>
+
+h1 {
+  font-size: 50px;
+  text-align:center;
+  color:orangered;
+font-style:oblique;
+text-transform:uppercase;
+text-shadow: 2px 2px 5px rgb(81, 0, 255);
+word-spacing:3px;
+letter-spacing: 2px;
+font-family:Georgia;
+font-size: 50px;
+padding-top: 40px;
+}
+
+h2{
+    font-size: 45px;
+  text-decoration: underline;
+}
+
+        
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+.c1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+
+form{
+    background: aqua;
+    padding: 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+border: solid;
+    
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    }
+
+button{
+background-color:blue;
+  color:white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:solid;
+  cursor: pointer;
+  width: 50%;
+  
+}
+
+ ::placeholder{
+    text-align: center;
+    
+}
+
+</style>
+
+<body>
+  
+   <h1> Krishna Lunch Home (Pure Veg)</h1>
+   <h1> Let's Taste IT</h1>
+    
+   <div class="c1">
+   
+    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+      <h2>Login</h2>
+      <hr>
+      <label for="Name"><b>Name</b></label>
+      <input type="text" class="form-control" name="name" id="name"placeholder='Enter Your Name'>
+
+      <label for="Email"><b>Email</b></label>
+      <input type="email" name="email" id="email"placeholder="Enter Your Email">
+
+      <label for="Mobile No"><b>Mobile No</b></label>
+      <input type="text" name="mobile number" id="number" placeholder="Enter Your Mobile Number">
+      
+      <form action="Starter.html">
+   <button type="submit" formaction="ThankYou.html">Login</button>
+
+</form>
+       
+</div>
+</body>
+</html>      
+           
+           
+   
+            
+            
+          
+           
+            
+            
+
+      
+            
+       
+   
+  
+   
