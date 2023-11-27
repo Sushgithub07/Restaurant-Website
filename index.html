@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Krishna Lunch Home</title>
+    </head>
+    
+<body>
+
+  <Style>
+    /* Style for navbar       */
+
+ul{
+    background-color:white;
+    list-style-type: none;
+    text-align:right;
+   
+   }
+   li{
+    display:inline-block;
+    margin: 20px;
+    padding: 10px;
+    font-size:x-large;
+    list-style-type: none;
+   font-family: Arial;
+   }
+
+   a{
+          text-decoration: none;
+         }
+
+.dropbtn {
+    margin: 20px;
+  padding: 16px;
+    background-color: #3498DB;
+    color: white;
+   font-size:x-large;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+ 
+  
+  .dropdown {
+     position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    text-align: center;
+    
+    }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+  }
+  
+ .dropdown-content a:hover {background-color:aqua}
+  
+  .show {display: block;}
+
+  
+
+  /* Style for heading */
+h1 {
+    font-size: 50px;
+    text-align:center;
+    color:orangered;
+  font-style:oblique;
+  text-transform:uppercase;
+  text-shadow: 2px 2px 5px rgb(81, 0, 255);
+  word-spacing:3px;
+  letter-spacing: 2px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 50px;
+  padding-top: 40px;
+  }
+  
+  /* Style for bg-img */
+          .bg-img {
+          background-image: url("./img/FOOD.jpg");
+          min-height:600px;
+          background-position:center;
+          background-repeat: no-repeat;
+          background-size:1500px;
+          background-attachment:fixed;
+          }
+          
+         
+  </Style>
+
+  <ul>
+   <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="Starter.html">Starter</a>
+    <a href="Main-Course.html">Main-Course</a>
+    <a href="Desert.html">Desert</a>
+  </div>
+  <li><a href="Login.html">Login</a></li>
+  <li><a href="Contact Us.html">Contact Us</a></li>
+</ul>  
+</div>
+<br><br><br>
+
+   <h1> Krishna Lunch Home (Pure Veg)</h1>
+            <h1> Let's Taste IT</h1>
+ 
+            <br>
+     <div class="bg-img">  </div>
+
+     <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+     </body>
+     </html>   
+              
+    
+   
+       
+           
+            
+  
+           
+              
+ 
+          
+
+         
+          
+          
+         
+
+  
+            
+
+
+      
